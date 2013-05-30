@@ -18,7 +18,7 @@ task :install do
     src = "#{current_dir}/.vimrc"
     dest = Dir.home + "/.vimrc"
     File.symlink(src, dest) && puts("Symlinking #{dest} -> #{src}") unless File.symlink?(dest) || File.exists?(dest)
-    puts "Done."
+    exec 'vim -c "BundleInstall"'
 end
 
 
