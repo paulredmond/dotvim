@@ -26,3 +26,5 @@ set shiftwidth=4
 set expandtab
  
 colorscheme railscasts
+map <F10> :NERDTreeToggle<CR>      " Key to open NERDTree in commands mode
+imap <F10> <Esc>:NERDTreeToggle<CR>    " Key to open NERDTree in insert mode
