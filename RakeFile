@@ -1,17 +1,3 @@
-def get_excludes
-  exclude  = %w(.git .gitignore README.md RakeFile)
-
-  if (File.exists? ('.gitignore'))
-    File.open('.gitignore', 'r').each_line do |line|
-      exclude.push(line) unless exclude.include? line
-    end
-  end
-
-  exclude
-end
-
-exclude = get_excludes
-
 desc 'Install vim'
 task :install do
     current_dir = File.dirname(__FILE__)
