@@ -19,6 +19,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-rake.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'mileszs/ack.vim'
 
 " Customize
 syntax on
