@@ -20,6 +20,8 @@ Bundle 'tpope/vim-rake.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
+Bundle 'bling/vim-airline'
+Bundle 'scrooloose/syntastic'
 
 " Customize
 syntax on
@@ -31,3 +33,7 @@ set number
 colorscheme railscasts
 map <F10> :NERDTreeToggle<CR>      " Key to open NERDTree in commands mode
 imap <F10> <Esc>:NERDTreeToggle<CR>    " Key to open NERDTree in insert mode
+
+set laststatus=2
+set encoding=utf-8
+autocmd BufWritePre *.py :%s/\s\+$//e
