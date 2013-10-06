@@ -17,6 +17,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-rake.git'
+Bundle 'tpope/vim-bundler'
 Bundle 'scrooloose/nerdtree'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
@@ -36,4 +37,5 @@ imap <F10> <Esc>:NERDTreeToggle<CR>    " Key to open NERDTree in insert mode
 
 set laststatus=2
 set encoding=utf-8
+let &t_Co=256
 autocmd BufWritePre *.py :%s/\s\+$//e
