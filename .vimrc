@@ -25,6 +25,7 @@ Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
+Bundle 'joonty/vdebug.git'
 
 " Customize
 syntax on
@@ -41,3 +42,8 @@ set laststatus=2
 set encoding=utf-8
 let &t_Co=256
 autocmd BufWritePre *.py :%s/\s\+$//e
+
+" vdebug
+let g:vdebug_options= {
+\    "port": 9001
+\}
