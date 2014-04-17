@@ -24,6 +24,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
 
 " Customize
 syntax on
