@@ -26,6 +26,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'joonty/vdebug.git'
+Bundle 'editorconfig/editorconfig-vim'
 
 " Customize
 syntax on
@@ -33,6 +34,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set number
+set wrap
 
 colorscheme railscasts
 map <F10> :NERDTreeToggle<CR>      " Key to open NERDTree in commands mode
