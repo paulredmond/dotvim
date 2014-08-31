@@ -22,6 +22,8 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
 
 " Customize
 syntax on
@@ -31,8 +33,10 @@ set expandtab
 set number
 
 colorscheme railscasts
-map <F10> :NERDTreeToggle<CR>      " Key to open NERDTree in commands mode
-imap <F10> <Esc>:NERDTreeToggle<CR>    " Key to open NERDTree in insert mode
+
+" NERDTree Settings
+let NERDTreeShowHidden=1
+nmap <silent> <F3> :NERDTreeToggle<CR>
 
 set laststatus=2
 set encoding=utf-8
