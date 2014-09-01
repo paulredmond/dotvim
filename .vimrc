@@ -38,6 +38,9 @@ set expandtab
 set number
 set wrap
 
+" Formatting for .json
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
 colorscheme railscasts
 
 " NERDTree Settings
