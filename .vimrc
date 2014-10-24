@@ -29,6 +29,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'joonty/vdebug.git'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'shawncplus/phpcomplete.vim'
 
 " Customize
 syntax on
@@ -37,6 +38,14 @@ set shiftwidth=4
 set expandtab
 set number
 set wrap
+set guifont=Bitstream\ Vera\ Sans\ Mono\ 10
+
+" Window Shortcuts
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 
 " Formatting for .json
 autocmd BufNewFile,BufRead *.json set ft=javascript
