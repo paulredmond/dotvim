@@ -29,7 +29,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'joonty/vdebug.git'
 Bundle 'editorconfig/editorconfig-vim'
-Bundle 'shawncplus/phpcomplete.vim'
+Bundle 'majutsushi/tagbar'
 
 " Customize
 syntax on
@@ -55,6 +55,9 @@ colorscheme railscasts
 " NERDTree Settings
 let NERDTreeShowHidden=1
 nmap <silent> <F3> :NERDTreeToggle<CR>
+
+" TagBar
+nmap <F8> :TagbarToggle<CR>
 
 set laststatus=2
 set encoding=utf-8
