@@ -30,6 +30,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'joonty/vdebug.git'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'majutsushi/tagbar'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'kien/ctrlp.vim'
 
 " Customize
 syntax on
