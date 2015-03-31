@@ -31,7 +31,7 @@ Bundle 'joonty/vdebug.git'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'jiangmiao/auto-pairs'
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlp.vim'
 
 " Customize
 syntax on
@@ -70,3 +70,9 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 let g:vdebug_options= {
 \    "port": 9001
 \}
+
+" Custom highlighting
+
+" Thanks to http://dailyvim.tumblr.com/post/1262764095/additional-ruby-syntax-highlighting
+au BufRead,BufNewFile {Capfile,Gemfile,Rakefile,Thorfile,config.ru,.caprc,.irbrc,irb_tempfile*} set ft=ruby
+au BufRead,BufNewFile {.ctp} set ft=php
