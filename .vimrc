@@ -1,3 +1,4 @@
+" Fix Delete (backspace) on Mac OS X
 set backspace=2
 
 " Vundle stuffs
