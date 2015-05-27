@@ -1,3 +1,5 @@
+set backspace=2
+
 " Vundle stuffs
 set nocompatible               " be iMproved
 filetype off                   " required!
