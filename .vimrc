@@ -83,3 +83,4 @@ let g:vdebug_options= {
 " Thanks to http://dailyvim.tumblr.com/post/1262764095/additional-ruby-syntax-highlighting
 au BufRead,BufNewFile {Capfile,Gemfile,Rakefile,Thorfile,config.ru,.caprc,.irbrc,irb_tempfile*} set ft=ruby
 au BufRead,BufNewFile {.ctp} set ft=php
+au BufRead,BufNewFile {*.json} set ft=javascript
