@@ -34,6 +34,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/ctrlp.vim'
+Plugin 'leafgarland/typescript-vim'
 
 "Plugin 'ctrlp.vim'
 
