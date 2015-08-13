@@ -35,6 +35,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'Valloric/YouCompleteMe'
 
 "Plugin 'ctrlp.vim'
 
@@ -49,6 +50,38 @@ set expandtab
 set number
 set wrap
 set guifont=Bitstream\ Vera\ Sans\ Mono\ 10
+set visualbell   " Don't beep
+set noerrorbells " Don't beep
+set mouse=a
+set autowrite  " Save on buffer switch
+set autoindent " Always set autoindenting on
+set copyindent " copy the previous indentation on autoindenting
+set ignorecase " ignore case when searching
+set smartcase  " ignore case if search pattern is all lowercase
+
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = ","
+let g:mapleader = ","
+
+" fast saves
+nmap <leader>w :w!<cr>
+
+" Down is really the next line
+nnoremap j gj
+nnoremap k gk
+
+" Easy escaping to normal model
+imap jj <esc>
+
+" Easy window navigation
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 " Window Shortcuts
 map <C-h> <C-w>h
@@ -56,6 +89,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Laravel common framework files
+nmap <leader>lr :e app/Http/routes.php<cr>
+nmap <leader>lca :e config/app.php<cr>81Gf(%0
+nmap <leader>lcd :e config/database.php<cr>
+nmap <leader>lc :e composer.json<cr>
 
 " Formatting for .json
 autocmd BufNewFile,BufRead *.json set ft=javascript
@@ -71,7 +109,6 @@ nmap <F8> :TagbarToggle<CR>
 
 set laststatus=2
 set encoding=utf-8
-let &t_Co=256
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 " vdebug
