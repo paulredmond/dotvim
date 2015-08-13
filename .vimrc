@@ -36,6 +36,8 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'godlygeek/csapprox'
+Bundle "daylerees/colour-schemes", { "rtp": "vim/"  }
 
 "Plugin 'ctrlp.vim'
 
@@ -65,7 +67,7 @@ set directory=~/.vim/swap//
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","
-let g:mapleader = ","
+"let g:mapleader = ","
 
 " fast saves
 nmap <leader>w :w!<cr>
@@ -99,6 +101,10 @@ nmap <leader>lc :e composer.json<cr>
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
 colorscheme railscasts
+
+" VIM Airline config
+let g:airline_powerline_fonts = 1
+"let g:airline_theme='tomorrow'
 
 " NERDTree Settings
 let NERDTreeShowHidden=1
