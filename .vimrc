@@ -51,7 +51,7 @@ set shiftwidth=4
 set expandtab
 set number
 set wrap
-set guifont=Bitstream\ Vera\ Sans\ Mono\ 10
+set guifont=Hack
 set visualbell   " Don't beep
 set noerrorbells " Don't beep
 set mouse=a
