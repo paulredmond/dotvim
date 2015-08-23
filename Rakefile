@@ -1,8 +1,9 @@
 desc 'Install vim'
+
 task :install do
   current_dir = File.dirname(__FILE__)
    # Make vim backup/swap directories
-  `mkdir -p #{current_dir}/\{backup,swap\}`
+  `mkdir -p #{current_dir}/backup #{current_dir}/swap`
 
   src = "#{current_dir}/.vimrc"
   dest = Dir.home + "/.vimrc"
