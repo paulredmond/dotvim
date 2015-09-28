@@ -35,7 +35,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'godlygeek/csapprox'
 Bundle "daylerees/colour-schemes", { "rtp": "vim/"  }
 
