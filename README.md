@@ -8,6 +8,8 @@ setup
 
 ```
 git clone git@github.com:paulredmond/dotvim.git ~/.vim
+cd ~/.vim
+rake
 ```
 
 ctags
