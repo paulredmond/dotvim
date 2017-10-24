@@ -3,6 +3,13 @@ dotvim
 
 My vim setup - just starting to learn/use vim
 
+setup
+-----
+
+```
+git clone git@github.com:paulredmond/dotvim.git ~/.vim
+```
+
 ctags
 -----
 
